@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sources>
 
-<!--
-Version: 2025-04-07
--->
-
-<!--
-You can list as many <source> entries in a file as you wish.
-Files or urls for sources and channels ending in '.gz' will be treated as
-gzipped and decompressed while processing.
-Use the nocheck="1" attribute for sources which do not have the LastUpdate.txt file on the website.
-Use the "type" attribute to set the python module that handles the file,
-currently type="gen_xmltv" and type="epg.dat" are supported, more will follow once this plugin
-gets more popular.
-The channels property is the local file or URL with channel ID to service ref
-mappings. The default is the same filename but with .channels.xml as extension.
-Each source may use a different channels definition, or multiple sources may use
-the same, whatever is convenient.
-The description must be unique for each source, and is displayed on the UI.
--->
+<!-- SATtek Modified Sources by Nemoxyz - Italian users - update 10-03-2025 -->
 
 	<mappings>
 		<channel name="rytec.channels.xml.xz">
 			<url>http://www.xmltvepg.nl/rytec.channels.xml.xz</url>
 			<url>http://rytecepg.wanwizard.eu/rytec.channels.xml.xz</url>
 			<url>http://epg.vuplus-community.net/rytec.channels.xml.xz</url>
+			<url>http://nemoxyz.manutek.it/sattekepg/rytec.channels.xml.xz</url>
+		</channel>
+		
+		<channel name="azman.channels.xml.xz">
+			<url>http://www.topolowa4.pl/azman.channels.xml.xz</url>
+			<url>http://www.xmltvepg.nl/azman.channels.xml.xz</url>
+			<url>http://rytecepg.wanwizard.eu/azman.channels.xml.xz</url>
+			<url>http://epg.vuplus-community.net/azman.channels.xml.xz</url>
+			<url>http://zukon.pl/xml_epg/azman.channels.xml.xz</url>
 		</channel>
 	</mappings>
-
-	<sourcecat sourcecatname="Rytec General XMLTV">
+	
+	<sourcecat sourcecatname="Rytec General XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>News Channels (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecNWS.xz</url>
@@ -60,8 +52,142 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecMisc.xz</url>
 		</source>
 	</sourcecat>
+	
+	<sourcecat sourcecatname="Rytec Italia XMLTV - SATtek Mod">
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Italia - Basis (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecIT_Basic.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecIT_Basic.xz</url>
+			<url>http://epg.vuplus-community.net/rytecIT_Basic.xz</url>
+			<url>http://nemoxyz.manutek.it/sattekepg/rytecIT_Basic.xz</url>
+		</source>
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Italia - Sky (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecIT_Sky.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecIT_Sky.xz</url>
+			<url>http://epg.vuplus-community.net/rytecIT_Sky.xz</url>
+			<url>http://nemoxyz.manutek.it/sattekepg/rytecIT_Sky.xz</url>
+		</source>
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Italia - Sports/Film/Premium (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecIT_SportMovies.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecIT_SportMovies.xz</url>
+			<url>http://epg.vuplus-community.net/rytecIT_SportMovies.xz</url>
+			<url>http://nemoxyz.manutek.it/sattekepg/rytecIT_SportMovies.xz</url>
+		</source>
+	    <source type="gen_xmltv" channels="http://nemoxyz.manutek.it/sattekepg/iptvfree-sattek.channels.xml.xz">
+	       	<description>Italia - FREE-IPTVch PlutoTV (xz)</description>
+	       <url>http://nemoxyz.manutek.it/sattekepg/epg-PlutoTVch_IT.xz</url>    
+        </source>
+		<source type="gen_xmltv" channels="http://nemoxyz.manutek.it/sattekepg/iptvfree-sattek.channels.xml.xz">
+	       	<description>Italia - FREE-IPTVch Rakuten/SamsungTV (xz)</description>
+	       	<url>http://nemoxyz.manutek.it/sattekepg/epg-RAKUTEN-SAMSUNGtvch_IT.xz</url>    
+        </source>
+		<source type="gen_xmltv" channels="http://nemoxyz.manutek.it/sattekepg/iptvfree-sattek.channels.xml.xz">
+	       	<description>Italia - t3kCLOUD-SATtek-GENERIC-IPTVch (xz)</description>
+	       	<url>http://nemoxyz.manutek.it/sattekepg/epg-TEKcloud-GENERIC-IPTVch_IT.xz</url>    
+        </source>
+	</sourcecat>
+	
+	<sourcecat sourcecatname="Rytec Germania/Austria/Svizzera XMLTV - SATtek Mod">
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Deutschland - Basis  (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecDE_Basic.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecDE_Basic.xz</url>
+			<url>http://epg.vuplus-community.net/rytecDE_Basic.xz</url>
+		</source>
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Osterreich - Basis  (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecAT_Basic.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecAT_Basic.xz</url>
+			<url>http://epg.vuplus-community.net/rytecAT_Basic.xz</url>
+		</source>
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Switzerland - Basis  (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecCH_Basic.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecCH_Basic.xz</url>
+			<url>http://epg.vuplus-community.net/rytecCH_Basic.xz</url>
+			<url>http://nemoxyz.manutek.it/sattekepg/rytecCH_Basic.xz</url>
+		</source>
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Deutschland/Osterreich/Switzerland - Gemeinsam  (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecDE_Common.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecDE_Common.xz</url>
+			<url>http://epg.vuplus-community.net/rytecDE_Common.xz</url>
+		</source>
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Deutschland/Osterreich/Switzerland - Sports/Film  (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecDE_SportMovies.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecDE_SportMovies.xz</url>
+			<url>http://epg.vuplus-community.net/rytecDE_SportMovies.xz</url>
+		</source>
+	</sourcecat>
+	
+	<sourcecat sourcecatname="Koala Espana EPG Movistar XMLTV - SATtek Mod">
+    <source type="gen_xmltv" nocheck="1" channels="http://tropical.jungle-team.online/epg/koala_epg.channels.xml.gz">
+        <description>Koala 3 dias XMLTV</description>
+        <url>http://tropical.jungle-team.online/epg/koala3.xml.gz</url>
+    </source>
+    <source type="gen_xmltv" nocheck="1" channels="http://tropical.jungle-team.online/epg/koala_epg.channels.xml.gz">
+        <description>Koala 7 dias - Classic XMLTV</description>
+        <url>http://tropical.jungle-team.online/epg/koala7.xml.gz</url>
+    </source>
+	<source type="gen_xmltv" nocheck="1" channels="http://tropical.jungle-team.online/epg/koala_epg.channels.xml.gz">
+        <description>Koala 7 dias - Mod XMLTV </description>
+        <url>http://tropical.jungle-team.online/epg/koala7_2.xml.gz</url>
+    </source>
+    <source type="gen_xmltv" nocheck="1" channels="http://tropical.jungle-team.online/epg/koala_epg.channels.xml.gz">
+        <description>Koala 15 dias XMLTV</description>
+        <url>http://tropical.jungle-team.online/epg/koala15.xml.gz</url>
+    </source>
+    <source type="gen_xmltv" nocheck="1" channels="http://tropical.jungle-team.online/epg/koala_epg.channels.xml.gz">
+        <description>Koala 30 dias XMLTV</description>
+        <url>http://tropical.jungle-team.online/epg/koala30.xml.gz</url>
+    </source>
+    <source type="gen_xmltv" nocheck="1" channels="http://tropical.jungle-team.online/epg/koala_epg.channels.xml.gz">
+        <description>LaQuay TDT Channels XMLTV</description>
+        <url>http://raw.githubusercontent.com/HelmerLuzo/TDTChannels_EPG/master/TDTChannels_EPG.xml.gz</url>
+    </source>
+    <source type="gen_xmltv" nocheck="1" channels="http://tropical.jungle-team.online/epg/koala_epg.channels.xml.gz">
+        <description>Pluto XMLTV</description>
+        <url>http://tropical.jungle-team.online/epg/es.xml.gz</url>
+    </source>
+</sourcecat>
 
-	<sourcecat sourcecatname="Rytec Belgie/Belgique/Nederland/France XMLTV">
+	<sourcecat sourcecatname="[azman] Polonia XMLTV - SATtek Mod">
+		<source type="gen_xmltv" channels="azman.channels.xml.xz">
+			<description>Polska - Podstawowy</description>
+			<url>http://www.topolowa4.pl/azman_basic.xml.xz</url>
+			<url>http://www.xmltvepg.nl/azman_basic.xml.xz</url>
+			<url>http://rytecepg.wanwizard.eu/azman_basic.xml.xz</url>
+			<url>http://epg.vuplus-community.net/azman_basic.xml.xz</url>			
+		</source>	
+		<source type="gen_xmltv" channels="azman.channels.xml.xz">
+			<description>Polska - Dodatkowy</description>
+			<url>http://www.topolowa4.pl/azman_misc.xml.xz</url>
+			<url>http://www.xmltvepg.nl/azman_misc.xml.xz</url>
+			<url>http://rytecepg.wanwizard.eu/azman_misc.xml.xz</url>
+			<url>http://epg.vuplus-community.net/azman_misc.xml.xz</url>			
+		</source>
+		
+		<source type="gen_xmltv" channels="azman.channels.xml.xz">
+			<description>Polska - IPTV</description>
+			<url>http://www.topolowa4.pl/azman_iptv.xml.xz</url>
+			<url>http://www.xmltvepg.nl/azman_iptv.xml.xz</url>
+			<url>http://rytecepg.wanwizard.eu/azman_iptv.xml.xz</url>
+			<url>http://epg.vuplus-community.net/azman_iptv.xml.xz</url>			
+		</source>
+	
+		<source type="gen_xmltv" channels="azman.channels.xml.xz">
+			<description>Polska - Radio</description>
+			<url>http://www.topolowa4.pl/azman_radio.xml.xz</url>
+			<url>http://www.xmltvepg.nl/azman_radio.xml.xz</url>
+			<url>http://rytecepg.wanwizard.eu/azman_radio.xml.xz</url>
+			<url>http://epg.vuplus-community.net/azman_radio.xml.xz</url>			
+		</source>
+	</sourcecat>
+	
+	<sourcecat sourcecatname="Rytec Belgio/Olanda/Francia XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Nederland - Basis (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecNL_Basic.xz</url>
@@ -117,8 +243,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecFR_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Bulgaria XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Bulgaria XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Bulgaria</description>
 			<url>http://www.xmltvepg.nl/rytecBG.xz</url>
@@ -126,8 +252,7 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecBG.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Ceska/Slovensko XMLTV">
+	<sourcecat sourcecatname="Rytec Cecoslovacchia/Slovenia XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Slovensko - Bazicky (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecSK_Basic.xz</url>
@@ -153,8 +278,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecCZ_SK_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Danmark XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Danimarca XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Danmark - Grundleggende (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecDK_Basic.xz</url>
@@ -174,41 +299,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecDK_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Deutschland/Osterreich/Switzerland XMLTV">
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Deutschland - Basis  (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecDE_Basic.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecDE_Basic.xz</url>
-			<url>http://epg.vuplus-community.net/rytecDE_Basic.xz</url>
-		</source>
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Osterreich - Basis  (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecAT_Basic.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecAT_Basic.xz</url>
-			<url>http://epg.vuplus-community.net/rytecAT_Basic.xz</url>
-		</source>
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Switzerland - Basis  (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecCH_Basic.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecCH_Basic.xz</url>
-			<url>http://epg.vuplus-community.net/rytecCH_Basic.xz</url>
-		</source>
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Deutschland/Osterreich/Switzerland - Gemeinsam  (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecDE_Common.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecDE_Common.xz</url>
-			<url>http://epg.vuplus-community.net/rytecDE_Common.xz</url>
-		</source>
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Deutschland/Osterreich/Switzerland - Sports/Film  (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecDE_SportMovies.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecDE_SportMovies.xz</url>
-			<url>http://epg.vuplus-community.net/rytecDE_SportMovies.xz</url>
-		</source>
-	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Ellada XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Grecia XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Ellada - Genikos (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecGR_Basic.xz</url>
@@ -222,29 +314,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecGR_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Italia XMLTV">
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Italia - Basis (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecIT_Basic.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecIT_Basic.xz</url>
-			<url>http://epg.vuplus-community.net/rytecIT_Basic.xz</url>
-		</source>
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Italia - Sky (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecIT_Sky.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecIT_Sky.xz</url>
-			<url>http://epg.vuplus-community.net/rytecIT_Sky.xz</url>
-		</source>
-		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
-			<description>Italia - Sports/Film/Premium (xz)</description>
-			<url>http://www.xmltvepg.nl/rytecIT_SportMovies.xz</url>
-			<url>http://rytecepg.wanwizard.eu/rytecIT_SportMovies.xz</url>
-			<url>http://epg.vuplus-community.net/rytecIT_SportMovies.xz</url>
-		</source>
-	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Portugal XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Portogallo XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Portugal (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecPT.xz</url>
@@ -252,8 +323,23 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecPT.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Norge XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Magyarorszag XMLTV - SATtek Mod">
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Magyarorszag - Basic (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecHU_Basic.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecHU_Basic.xz</url>
+			<url>http://epg.vuplus-community.net/rytecHU_Basic.xz</url>
+		</source>
+		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
+			<description>Magyarorszag - Sport/Film (xz)</description>
+			<url>http://www.xmltvepg.nl/rytecHU_SportMovies.xz</url>
+			<url>http://rytecepg.wanwizard.eu/rytecHU_SportMovies.xz</url>
+			<url>http://epg.vuplus-community.net/rytecHU_SportMovies.xz</url>
+		</source>
+	</sourcecat>
+	
+	<sourcecat sourcecatname="Rytec Norvegia XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Norge - Basic (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecNO_Basic.xz</url>
@@ -273,8 +359,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecNO_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Romania XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Romania XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Romania - Baza (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecRO_Basic.xz</url>
@@ -288,8 +374,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecRO_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Croatia XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Croazia XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Hrvatska - Osnovni (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecHRV_Basic.xz</url>
@@ -309,8 +395,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecHRV_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Serbia/Montenegro XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Serbia/Montenegro XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Srbija/Crna Gora - Osnovni (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecSRB_Basic.xz</url>
@@ -330,8 +416,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecHRV_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Slovenia XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Slovenia XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Slovenija - Podlaga (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecSVN_Basic.xz</url>
@@ -351,8 +437,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecSVN_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Sverige XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Svezia XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Sverige - Grundlaggande (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecSE_Basic.xz</url>
@@ -372,8 +458,8 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecSE_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec Suomi XMLTV">
+	
+	<sourcecat sourcecatname="Rytec Suomi XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>Suomi - Perustiedot (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecFI_Basic.xz</url>
@@ -393,22 +479,20 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecFI_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
-	<sourcecat sourcecatname="Rytec UK XMLTV">
+	
+	<sourcecat sourcecatname="Rytec UnitedKingdom XMLTV - SATtek Mod">
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>UK/Ireland - FreeSat/FTA (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecUK_Basic.xz</url>
 			<url>http://rytecepg.wanwizard.eu/rytecUK_Basic.xz</url>
 			<url>http://epg.vuplus-community.net/rytecUK_Basic.xz</url>
 		</source>
-
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>UK/Ireland - Sky (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecUK_SkyLive.xz</url>
 			<url>http://rytecepg.wanwizard.eu/rytecUK_SkyLive.xz</url>
 			<url>http://epg.vuplus-community.net/rytecUK_SkyLive.xz</url>
 		</source>
-
 		<source type="gen_xmltv" channels="rytec.channels.xml.xz">
 			<description>UK/Ireland - Sports/Movies (xz)</description>
 			<url>http://www.xmltvepg.nl/rytecUK_SportMovies.xz</url>
@@ -416,5 +500,5 @@ The description must be unique for each source, and is displayed on the UI.
 			<url>http://epg.vuplus-community.net/rytecUK_SportMovies.xz</url>
 		</source>
 	</sourcecat>
-
+	
 </sources>
